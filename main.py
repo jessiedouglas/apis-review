@@ -29,13 +29,16 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(template.render())
     
     def post(self):
-        # Step 1: Get the user input from the form
+        # Step 1: Get the user input from the form.
         
-        # Step 2: Create the URL (Hint: this is a different kind of URL: no query string!)
+        # Step 2: Create the URL (Hint: this is a different kind of URL: no query string!).
+        # Example usage: http://restcountries.eu/rest/v2/name/canada
+        # API documentation:https://restcountries.eu/#api-endpoints-name
+        base_url = "http://restcountries.eu/rest/v2/name/"
         
-        # Step 3: Query the API and parse the data from JSON to python
+        # Step 3: Query the API and parse the data from JSON to python.
         
-        # Step 4: Use the returned data to get the url of the flag image
+        # Step 4: Use the returned data to get the url of the flag image.
         # Hint: Put the API request URL into the browser to see what the data looks like.
         
         # Step 5: Render the flag_output template.
